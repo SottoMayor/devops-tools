@@ -8,6 +8,8 @@
 
 ## Most used
 
+Require no comments...   
+
 1 - `git init (directory)` or `git init`;    
 
 2 - `git clone (repository url)`;   
