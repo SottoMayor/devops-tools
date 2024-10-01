@@ -92,8 +92,17 @@ Displays the commit history with a specified limit on the number of commits show
 ### 7. `git log --grep=(pattern)`
 Filters the commit history to show only commits that contain a specified keyword or pattern in their commit message.
 
-### Example:
+#### Example:
 `git log --grep="fix"`   
+
+### 8. `git commit --amend`
+Modifies the most recent commit. This command allows you to change the commit message or include new changes to the last commit without creating a new commit.   
+**OBS**: Not recommended if the commit is already in the remote repository.
+
+#### Example:
+To modify the commit message:
+`git commit --amend -m "New commit message"`
+
 
 
 
