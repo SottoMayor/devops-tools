@@ -116,4 +116,27 @@ Temporarily saves your uncommitted changes (both staged and unstaged) to a stash
 - To pop the most recent stash:   
 `git stash pop`
 
+### 10. Creating a branch from an earlier commit
+
+Suppose that you want to create a branch from the 5th commit while the `HEAD` is currently on the 10th commit, to do that:
+
+1. **Get the commit hash**: Use `git log` to find the hash of the 5th commit.
+
+   ```
+   git log
+   ```
+
+2. **Checkout to the desired commit**: Once you have the hash of the 5th commit, checkout to that commit.
+
+   ```
+   git checkout (hash_of_commit_5)
+   ```
+
+3. **Create a new branch**: Now that you're at the state of the 5th commit, create a new branch from it.
+
+   ```
+   git checkout -b (new_branch_name)
+   ```
+
+This will create a new branch from the 5th commit, and `HEAD` will point to this new branch.
 
