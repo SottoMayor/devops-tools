@@ -106,5 +106,14 @@ To modify the commit message:
 `git commit --amend -m "New commit message"`
 
 
+### 9. `git stash` and `git stash pop`
+Temporarily saves your uncommitted changes (both staged and unstaged) to a stash, allowing you to work on a clean working directory. The changes can be reapplied later.
+
+#### Example:
+- To stash your changes:   
+`git stash`
+
+- To pop the most recent stash:   
+`git stash pop`
 
 
